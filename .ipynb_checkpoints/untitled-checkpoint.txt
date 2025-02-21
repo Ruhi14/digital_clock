@@ -1,0 +1,13 @@
+import pandas as pd
+
+# Create a sample dataset
+data = {
+    "Name": ["Alice", "Bob", "Charlie"],
+    "Age": [25, 30, 35],
+    "Salary": [50000, 60000, 70000]
+}
+
+# Save to CSV
+df = pd.DataFrame(data)
+df.to_csv('data.csv', index=False)
+print("Sample CSV file created.")
